@@ -1,5 +1,5 @@
 # smoothmonkey.zsh-theme
-# Repo: https://github.com/sebastianpulido/oh-my-zsh
+# Repo: https://github.com/sebastianpulido/oh-my-zsh/smoothmonkey.zsh-theme
 # based on: https://github.com/andyfleming/oh-my-zsh/blob/master/themes/af-magic.zsh-theme
 # based on: jbergantine.zsh-theme
 
