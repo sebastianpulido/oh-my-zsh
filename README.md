@@ -1,2 +1,3 @@
-<img width="929" alt="smoothmonkey_theme" src="https://user-images.githubusercontent.com/17438047/114493114-40eb8300-9c5d-11eb-89da-fb87e60f9325.png">
+<img width="1027" alt="smoothmonkey_theme" src="https://user-images.githubusercontent.com/17438047/114495050-c45aa380-9c60-11eb-97be-3ae2a068d1c0.png">
+
 # oh-my-zsh
