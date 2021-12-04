@@ -8,9 +8,20 @@ typeset +H return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 typeset +H my_gray="$FG[237]"
 typeset +H my_orange="$FG[214]"
 
+# separator dashes size
+function afmagic_dashes {
+	local PYTHON_ENV="$VIRTUAL_ENV"
+	[[ -z "$PYTHON_ENV" ]] && PYTHON_ENV="$CONDA_DEFAULT_ENV"
+
+	if [[ -n "$PYTHON_ENV" && "$PS1" = \(* ]]; then
+		echo $(( COLUMNS - ${#PYTHON_ENV} - 3 ))
+	else
+		echo $COLUMNS
+	fi
+}
 
 # primary prompt
-PS1='$FG[237]---------------------------------------------------------------------------------%{$reset_color%}
+PS1='$FG[237]${(l.$(afmagic_dashes)..-.)}%{$reset_color%}
 %{$fg_bold[red]%}➜ %{$fg_bold[green]%}%{$fg[cyan]%}%c %{$fg_bold[white]%}$(git_prompt_info)%{$fg_bold[white]%} 
 : %{$reset_color%}'
 
