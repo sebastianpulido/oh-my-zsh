@@ -1,0 +1,87 @@
+{
+    "explorer.confirmDelete": false,
+	"editor.fontFamily": "Ubuntu Mono derivative Powerline",
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
+    "editor.smoothScrolling": true,
+    "diffEditor.codeLens": true,
+    "editor.minimap.scale": 1,
+    "telemetry.telemetryLevel": "off",
+    "editor.bracketPairColorization.enabled": true,
+    "workbench.colorCustomizations": {
+        "editorBracketHighlight.foreground1": "#f9f9fa",
+        "editorBracketHighlight.foreground2": "#f9f9fa",
+        "editorBracketHighlight.foreground3": "#f9f9fa",
+        "editorBracketHighlight.foreground4": "#f9f9fa",
+        "editorBracketHighlight.foreground5": "#f9f9fa",
+        "editorBracketHighlight.unexpectedBracket.foreground": "#fdfcfc",
+        "statusBar.background": "#266ce3",
+        "tab.activeBorderTop": "#266ce3",
+        "activityBar.activeBorder": "#266ce3",
+        "list.warningForeground": "#d77064"
+    },
+    "workbench.editor.enablePreview": true,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "entity.name.function.java",
+                    "constant.language.json",
+                    "variable",
+                ],
+                "settings": {
+                    "foreground": "#fbf9f9",
+                    "fontStyle": "bold",
+                },
+            },
+            {
+                "scope": [
+                    "support.type.property-name",
+                ],
+                "settings": {
+                    "foreground": "#4EC9B0",
+                },
+            },
+            {
+                "scope" : [
+                    "constant.numeric",
+                    //"constant.numeric.json.comments",
+                ],
+                "settings": {
+                    "foreground": "#c0da4e", // "#4985ec",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope" : [
+                    "string.quoted.double.json.comments",
+                    "string.quoted.double.java",
+                ],
+                "settings": {
+                    "foreground": "#266ce3",
+                    "fontStyle": "bold"
+                },
+            },
+            {
+                "scope" : [
+                    "comment.line.double-slash.js",
+                    "comment.line.number-sign.python",
+                ],
+                "settings": {
+                    "foreground": "#575e69",
+                },
+            },
+            {
+                "scope" : [
+                    //"comment.line.double-slash.java",
+                    "comment.block.javadoc.java",
+                    "punctuation.definition.comment.java",
+                ],
+                "settings": {
+                    "foreground": "#4985ec",
+                }
+            },
+        ]
+    },
+    "workbench.colorTheme": "GitHub Dark",
+}
