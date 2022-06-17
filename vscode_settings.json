@@ -1,6 +1,6 @@
 {
     "explorer.confirmDelete": false,
-	"editor.fontFamily": "Ubuntu Mono derivative Powerline",
+	"editor.fontFamily": "Ubuntu Mono",
     "editor.fontSize": 16,
     "editor.fontLigatures": true,
     "editor.smoothScrolling": true,
@@ -8,6 +8,7 @@
     "editor.minimap.scale": 1,
     "telemetry.telemetryLevel": "off",
     "editor.bracketPairColorization.enabled": true,
+    "vim.smartRelativeLine": true,
     "workbench.colorCustomizations": {
         "editorBracketHighlight.foreground1": "#f9f9fa",
         "editorBracketHighlight.foreground2": "#f9f9fa",
@@ -18,7 +19,9 @@
         "statusBar.background": "#266ce3",
         "tab.activeBorderTop": "#266ce3",
         "activityBar.activeBorder": "#266ce3",
-        "list.warningForeground": "#d77064"
+        "list.warningForeground": "#d77064",
+        "gitDecoration.modifiedResourceForeground": "#d77064",
+        "gitDecoration.untrackedResourceForeground": "#d77064",
     },
     "workbench.editor.enablePreview": true,
     "editor.tokenColorCustomizations": {
@@ -45,21 +48,22 @@
             {
                 "scope" : [
                     "constant.numeric",
-                    //"constant.numeric.json.comments",
                 ],
                 "settings": {
-                    "foreground": "#c0da4e", // "#4985ec",
+                    "foreground": "#c0da4e",
                     "fontStyle": "bold"
                 }
             },
             {
                 "scope" : [
                     "string.quoted.double.json.comments",
+                    "string.quoted.single.js",
                     "string.quoted.double.java",
+                    "string.quoted.double.json",
                 ],
                 "settings": {
                     "foreground": "#266ce3",
-                    "fontStyle": "bold"
+                    "fontStyle": "bold",
                 },
             },
             {
@@ -73,7 +77,6 @@
             },
             {
                 "scope" : [
-                    //"comment.line.double-slash.java",
                     "comment.block.javadoc.java",
                     "punctuation.definition.comment.java",
                 ],
@@ -84,4 +87,5 @@
         ]
     },
     "workbench.colorTheme": "GitHub Dark",
+    "workbench.iconTheme": "vscode-icons",
 }
