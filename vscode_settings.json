@@ -9,6 +9,8 @@
     "telemetry.telemetryLevel": "off",
     "editor.bracketPairColorization.enabled": true,
     "vim.smartRelativeLine": true,
+    "terminal.integrated.fontSize": 16,
+    "window.zoomLevel": 0.5,
     "workbench.colorCustomizations": {
         "editorBracketHighlight.foreground1": "#f9f9fa",
         "editorBracketHighlight.foreground2": "#f9f9fa",
@@ -84,8 +86,18 @@
                     "foreground": "#4985ec",
                 }
             },
+            {
+                "scope" : [
+                    //"meta.paragraph.markdown",
+                ],
+                "settings": {
+                    "foreground": "#d77064",
+                    "fontStyle": "bold"
+                }
+            },
         ]
     },
     "workbench.colorTheme": "GitHub Dark",
     "workbench.iconTheme": "vscode-icons",
+    "debug.console.fontSize": 14,
 }
