@@ -10,7 +10,8 @@
     "editor.bracketPairColorization.enabled": true,
     "vim.smartRelativeLine": true,
     "terminal.integrated.fontSize": 16,
-    "window.zoomLevel": 0.5,
+    "window.zoomLevel": 0.2,
+    "editor.semanticHighlighting.enabled": false,
     "workbench.colorCustomizations": {
         "editorBracketHighlight.foreground1": "#f9f9fa",
         "editorBracketHighlight.foreground2": "#f9f9fa",
@@ -33,9 +34,26 @@
                     "entity.name.function.java",
                     "constant.language.json",
                     "variable",
+                    "variable.other.object.cs",
+                    "punctuation.accessor.cs",
+                    "source.cs",
+                    "entity.name.function.cs",
+                    "entity.name.type.namespace.cs",
+                    "punctuation.parenthesis.close.cs",
+                    "punctuation.parenthesis.open.cs",
+                    "entity.name.type.cs",
                 ],
                 "settings": {
                     "foreground": "#fbf9f9",
+                    //"fontStyle": "bold",
+                },
+            },
+            {
+                "scope": [
+                    "entity.name.type.cs",
+                ],
+                "settings": {
+                    "foreground": "#266ce3",
                     "fontStyle": "bold",
                 },
             },
@@ -62,6 +80,7 @@
                     "string.quoted.single.js",
                     "string.quoted.double.java",
                     "string.quoted.double.json",
+                    "variable.other.object.cs",
                 ],
                 "settings": {
                     "foreground": "#266ce3",
@@ -92,7 +111,16 @@
                 ],
                 "settings": {
                     "foreground": "#d77064",
-                    "fontStyle": "bold"
+                    //"fontStyle": "bold"
+                }
+            },
+            {
+                "scope" : [
+                    "variable.other.readwrite.cs",
+                ],
+                "settings": {
+                    "foreground": "#B392F0",
+                    //"fontStyle": "bold"
                 }
             },
         ]
@@ -100,4 +128,5 @@
     "workbench.colorTheme": "GitHub Dark",
     "workbench.iconTheme": "vscode-icons",
     "debug.console.fontSize": 14,
+    "remoteHub.commitDirectlyWarning": "off",
 }
