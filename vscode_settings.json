@@ -1,7 +1,7 @@
 {
     "explorer.confirmDelete": false,
 	"editor.fontFamily": "Ubuntu Mono",
-    "editor.fontSize": 16,
+    "editor.fontSize": 14,
     "editor.fontLigatures": true,
     "editor.smoothScrolling": true,
     "diffEditor.codeLens": true,
@@ -9,8 +9,7 @@
     "telemetry.telemetryLevel": "off",
     "editor.bracketPairColorization.enabled": true,
     "vim.smartRelativeLine": true,
-    "terminal.integrated.fontSize": 16,
-    "window.zoomLevel": 0.2,
+    "terminal.integrated.fontSize": 14,
     "editor.semanticHighlighting.enabled": false,
     "workbench.colorCustomizations": {
         "editorBracketHighlight.foreground1": "#f9f9fa",
@@ -41,7 +40,10 @@
                     "entity.name.type.namespace.cs",
                     "punctuation.parenthesis.close.cs",
                     "punctuation.parenthesis.open.cs",
-                    "entity.name.type.cs",
+                    "entity.name.variable.property.cs",
+                    //"constant.language.null.cs",
+                    //"entity.name.type.cs",
+                    "entity.name.type.class.cs",
                 ],
                 "settings": {
                     "foreground": "#fbf9f9",
@@ -60,6 +62,7 @@
             {
                 "scope": [
                     "support.type.property-name",
+                    //"entity.name.variable.local.cs",
                 ],
                 "settings": {
                     "foreground": "#4EC9B0",
@@ -68,6 +71,7 @@
             {
                 "scope" : [
                     "constant.numeric",
+                    "string.quoted.double.cs",
                 ],
                 "settings": {
                     "foreground": "#c0da4e",
@@ -81,6 +85,7 @@
                     "string.quoted.double.java",
                     "string.quoted.double.json",
                     "variable.other.object.cs",
+                    "string.quoted.single.python",
                 ],
                 "settings": {
                     "foreground": "#266ce3",
@@ -107,19 +112,87 @@
             },
             {
                 "scope" : [
-                    //"meta.paragraph.markdown",
+                    "storage.modifier.cs",
+                    "keyword.other.class.cs",
+                    "keyword.other.namespace.cs",
+                    "keyword.other.using.cs",
+                    "keyword.control.flow.return.cs",
+                    "variable.other.readwrite.cs",
+                    "keyword.type.cs",
+                    "keyword.other.base.cs",
+                    "keyword.control.loop.foreach.cs",
+                    "keyword.other.var.cs",
+                    "keyword.control.conditional.if.cs",
+                    "constant.language.null.cs",
+                    "keyword.type.cs",
+                    "punctuation.definition.string.begin.cs",
+                    "punctuation.definition.string.end.cs",
+                    "keyword.control.loop.in.cs",
+                    "keyword.other.this.cs",
+                    "keyword.operator.comparison.cs",
+                    "keyword.control.conditional.else.cs",
+                    "keyword.control.cs",
+                    "keyword.operator.assignment.compound.bitwise.cs",
+                    "keyword.operator.bitwise.cs",
                 ],
                 "settings": {
-                    "foreground": "#d77064",
+                    "foreground": "#fe7ab2",
                     //"fontStyle": "bold"
                 }
             },
             {
                 "scope" : [
                     "variable.other.readwrite.cs",
+                    "keyword.other.get.cs",
+                    "keyword.other.set.cs",
+                    "meta.function-call.generic.python",
+                    "log.error",
                 ],
                 "settings": {
                     "foreground": "#B392F0",
+                    //"fontStyle": "bold"
+                }
+            },
+            {
+                "scope" : [
+                    //"entity.name.type.class.cs",
+                    "keyword.type.cs",
+                    "entity.name.type.cs",
+                    "variable.other.object.cs",
+                ],
+                "settings": {
+                    "foreground": "#006eec",
+                    //"fontStyle": "bold"
+                }
+            },
+            {
+                "scope" : [
+                    "log.debug",
+                ],
+                "settings": {
+                    "foreground": "#5beb95",
+                    
+                    //"fontStyle": "bold"
+                }
+            },
+            {
+                "scope" : [
+                   	"variable.parameter.function-call.python",
+                    "variable.parameter.function.language.python",
+                    //"entity.name.variable.local.cs",
+                    //"variable.other.readwrite.cs",
+                ],
+                "settings": {
+                    "foreground": "#ff6a80", 
+                    //"fontStyle": "bold"
+                }
+            },
+            {
+                "scope" : [
+                   	//"string.quoted.single.python",
+                ],
+                "settings": {
+                    "foreground": "#83a0bf",
                     //"fontStyle": "bold"
                 }
             },
@@ -129,4 +202,6 @@
     "workbench.iconTheme": "vscode-icons",
     "debug.console.fontSize": 14,
     "remoteHub.commitDirectlyWarning": "off",
+    "window.zoomLevel": 1,
+    "explorer.confirmDragAndDrop": false,
 }
