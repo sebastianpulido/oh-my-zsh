@@ -41,13 +41,10 @@
                     "punctuation.parenthesis.close.cs",
                     "punctuation.parenthesis.open.cs",
                     "entity.name.variable.property.cs",
-                    //"constant.language.null.cs",
-                    //"entity.name.type.cs",
                     "entity.name.type.class.cs",
                 ],
                 "settings": {
                     "foreground": "#fbf9f9",
-                    //"fontStyle": "bold",
                 },
             },
             {
@@ -62,7 +59,6 @@
             {
                 "scope": [
                     "support.type.property-name",
-                    //"entity.name.variable.local.cs",
                 ],
                 "settings": {
                     "foreground": "#4EC9B0",
@@ -86,6 +82,7 @@
                     "string.quoted.double.json",
                     "variable.other.object.cs",
                     "string.quoted.single.python",
+                    "keyword.type.cs",
                 ],
                 "settings": {
                     "foreground": "#266ce3",
@@ -137,7 +134,6 @@
                 ],
                 "settings": {
                     "foreground": "#fe7ab2",
-                    //"fontStyle": "bold"
                 }
             },
             {
@@ -150,19 +146,16 @@
                 ],
                 "settings": {
                     "foreground": "#B392F0",
-                    //"fontStyle": "bold"
                 }
             },
             {
                 "scope" : [
-                    //"entity.name.type.class.cs",
                     "keyword.type.cs",
                     "entity.name.type.cs",
                     "variable.other.object.cs",
                 ],
                 "settings": {
                     "foreground": "#006eec",
-                    //"fontStyle": "bold"
                 }
             },
             {
@@ -171,29 +164,22 @@
                 ],
                 "settings": {
                     "foreground": "#5beb95",
-                    
-                    //"fontStyle": "bold"
                 }
             },
             {
                 "scope" : [
                    	"variable.parameter.function-call.python",
                     "variable.parameter.function.language.python",
-                    //"entity.name.variable.local.cs",
-                    //"variable.other.readwrite.cs",
                 ],
                 "settings": {
                     "foreground": "#ff6a80", 
-                    //"fontStyle": "bold"
                 }
             },
             {
                 "scope" : [
-                   	//"string.quoted.single.python",
                 ],
                 "settings": {
                     "foreground": "#83a0bf",
-                    //"fontStyle": "bold"
                 }
             },
         ]
