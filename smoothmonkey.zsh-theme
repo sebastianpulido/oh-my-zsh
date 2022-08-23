@@ -11,7 +11,7 @@ typeset +H my_orange="$FG[214]"
 
 # primary prompt
 PS1='$FG[237]--------------------------------------------------%{$reset_color%}
-%{$fg_bold[red]%}┌─ %{$fg_bold[green]%}%{$fg[white]%}%~ %{$fg_bold[white]%}$(git_prompt_info)%{$fg_bold[red]%} 
+%{$fg_bold[green]%}┌─ %{$fg_bold[green]%}%{$fg[white]%}%~ %{$fg_bold[white]%}$(git_prompt_info)%{$fg_bold[cyan]%} 
 └──➜ %{$reset_color%}'
 
 PS2='%{$fg[red]%}\ %{$reset_color%}'
@@ -22,7 +22,7 @@ RPS1='${return_code}'
 RPS1+=' $my_gray%n@%m%{$reset_color%}%'
 
 # git settings
-ZSH_THEME_GIT_PROMPT_PREFIX="(%{$fg[red]%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="(%{$fg[cyan]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[white]%}) %{$fg[yellow]%}✗%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[white]%})"
