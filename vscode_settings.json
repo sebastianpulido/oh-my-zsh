@@ -1,49 +1,208 @@
 {
-    "totalSize": 1,
-    "done": true,
-    "records": [
-        {
-            "attributes": {
-                "type": "Case",
-                "url": "/services/data/v54.0/sobjects/Case/5009t00000634rfAAA"
+    "explorer.confirmDelete": false,
+    //"editor.fontFamily": "Ubuntu Mono",
+    "editor.fontSize": 12.5,
+    "editor.fontLigatures": true,
+    "editor.smoothScrolling": true,
+    "diffEditor.codeLens": true,
+    "editor.minimap.scale": 1,
+    "telemetry.telemetryLevel": "off",
+    "editor.bracketPairColorization.enabled": true,
+    "vim.smartRelativeLine": true,
+    "terminal.integrated.fontSize": 11.5,
+    "editor.semanticHighlighting.enabled": false,
+    "workbench.colorTheme": "Default Dark+ Experimental",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.fontAliasing": "auto",
+    "debug.console.fontSize": 11,
+    "explorer.confirmDragAndDrop": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "editor.inlineSuggest.enabled": true,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "workbench.colorCustomizations": {
+        //"editorBracketHighlight.foreground1": "#f9f9fa",
+        "editorBracketHighlight.foreground2": "#f9f9fa",
+        //"editorBracketHighlight.foreground3": "#f9f9fa",
+        //"editorBracketHighlight.foreground4": "#f9f9fa",
+        "editorBracketHighlight.foreground5": "#f9f9fa",
+        //"editorBracketHighlight.unexpectedBracket.foreground": "#fdfcfc",
+        "statusBar.background": "#2b3036",
+        "statusBarItem.hoverBackground": "#266ce3",
+        "statusBar.border": "#2b3036",
+        "tab.activeBorderTop": "#707681",
+        "activityBar.activeBorder": "#266ce3",
+        "list.warningForeground": "#d77064",
+        "gitDecoration.modifiedResourceForeground": "#d77064",
+        "gitDecoration.untrackedResourceForeground": "#d77064"
+    },
+    "workbench.editor.enablePreview": true,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "entity.name.function.java",
+                    "constant.language.json",
+                    "variable",
+                    "variable.other.object.cs",
+                    "punctuation.accessor.cs",
+                    "source.cs",
+                    "entity.name.function.cs",
+                    "entity.name.type.namespace.cs",
+                    "punctuation.parenthesis.close.cs",
+                    "punctuation.parenthesis.open.cs",
+                    "entity.name.variable.property.cs",
+                    "entity.name.type.class.cs"
+                ],
+                "settings": {
+                    "foreground": "#fbf9f9"
+                }
             },
-            "Id": "5009t00000634rfAAA",
-            "Data_Quality_check_completed__c": false,
-            "Is_this_a_Variant_of_Concern_VOC__c": null,
-            "Variant_of_Concern_Screening_Result__c": null,
-            "If_yes_which_VOC__c": null,
-            "Sensitive__c": null,
-            "Sero_Group_Subtype__c": "COVID-19",
-            "Source_Interface__c": null,
-            "CaseNumber": "31691026",
-            "Account": {
-                "attributes": {
-                    "type": "Account",
-                    "url": "/services/data/v54.0/sobjects/Account/0019t00000AarHlAAJ"
-                },
-                "FirstName": "Autogdsx",
-                "LastName": "Iomd"
+            {
+                "scope": [
+                    "entity.name.type.cs"
+                ],
+                "settings": {
+                    "foreground": "#266ce3",
+                    //"fontStyle": "bold"
+                }
             },
-            "Clinical_Care_Status__c": null,
-            "Case_Found_By__c": "Clinical Presentation",
-            "Date_of_Test__c": "9/1/2021",
-            "Was_aware_of_contact_with_ve_case__c": null,
-            "Description": null,
-            "Healthcare_Worker__c": null,
-            "Confirmation_Date__c": "28/4/2023, 3:14 pm",
-            "RecordTypeId": "0122e0000004NYuAAM",
-            "Owner": {
-                "attributes": {
-                    "type": "Name",
-                    "url": "/services/data/v54.0/sobjects/Group/00G2P000000OMaYUAW"
-                },
-                "Name": "Informatics"
+            {
+                "scope": [
+                    "support.type.property-name",
+                    //"comment.line.double-slash.swift"
+                ],
+                "settings": {
+                    "foreground": "#4EC9B0"
+                }
             },
-            "Case_Classification__c": "Confirmed",
-            "Specifyrelationshiptocase__c": null,
-            "Organism_Cause__c": "COVID-19",
-            "Epi_Classification__c": "Sporadic case",
-            "Origin": null
-        }
-    ]
+            {
+                "scope": [
+                    "constant.numeric",
+                    "string.quoted.double.cs",
+                    "support.function.builtin.shell",
+                ],
+                "settings": {
+                    "foreground": "#c0da4e",
+                    //"fontStyle": "bold"
+                }
+            },
+            {
+                "scope": [
+                    "string.quoted.double.json.comments",
+                    "string.quoted.single.js",
+                    "string.quoted.double.java",
+                    "string.quoted.double.json",
+                    "variable.other.object.cs",
+                    "string.quoted.single.python",
+                    "keyword.type.cs",
+                    "variable.other.normal.shell",
+                    "variable.other.positional.shell",
+                ],
+                "settings": {
+                    "foreground": "#266ce3",
+                    //"fontStyle": "bold"
+                }
+            },
+            {
+                "scope": [
+                    "comment.line.double-slash.js",
+                    "comment.line.number-sign.python"
+                ],
+                "settings": {
+                    "foreground": "#575e69"
+                }
+            },
+            {
+                "scope": [
+                    "comment.block.javadoc.java",
+                    "punctuation.definition.comment.java"
+                ],
+                "settings": {
+                    "foreground": "#4985ec"
+                }
+            },
+            {
+                "scope": [
+                    "storage.modifier.cs",
+                    "keyword.other.class.cs",
+                    "keyword.other.namespace.cs",
+                    "keyword.other.using.cs",
+                    "keyword.control.flow.return.cs",
+                    "variable.other.readwrite.cs",
+                    "keyword.type.cs",
+                    "keyword.other.base.cs",
+                    "keyword.control.loop.foreach.cs",
+                    "keyword.other.var.cs",
+                    "keyword.control.conditional.if.cs",
+                    "constant.language.null.cs",
+                    "keyword.type.cs",
+                    "punctuation.definition.string.begin.cs",
+                    "punctuation.definition.string.end.cs",
+                    "keyword.control.loop.in.cs",
+                    "keyword.other.this.cs",
+                    "keyword.operator.comparison.cs",
+                    "keyword.control.conditional.else.cs",
+                    "keyword.control.cs",
+                    "keyword.operator.assignment.compound.bitwise.cs",
+                    "keyword.operator.bitwise.cs",
+                    "punctuation.definition.string.end.shell",
+                    "punctuation.definition.string.begin.shell",
+                ],
+                "settings": {
+                    "foreground": "#fe7ab2"
+                }
+            },
+            {
+                "scope": [
+                    "variable.other.readwrite.cs",
+                    "keyword.other.get.cs",
+                    "keyword.other.set.cs",
+                    "meta.function-call.generic.python",
+                    "log.error"
+                ],
+                "settings": {
+                    "foreground": "#B392F0"
+                }
+            },
+            {
+                "scope": [
+                    "keyword.type.cs",
+                    "entity.name.type.cs",
+                    "variable.other.object.cs"
+                ],
+                "settings": {
+                    "foreground": "#006eec"
+                }
+            },
+            {
+                "scope": [
+                    "log.debug"
+                ],
+                "settings": {
+                    "foreground": "#5beb95"
+                }
+            },
+            {
+                "scope": [
+                    "variable.parameter.function-call.python",
+                    "variable.parameter.function.language.python"
+                ],
+                "settings": {
+                    "foreground": "#ff6a80"
+                }
+            },
+            {
+                "scope": [],
+                "settings": {
+                    "foreground": "#83a0bf"
+                }
+            }
+        ]
+    },
+    "window.zoomLevel": 1,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
 }
