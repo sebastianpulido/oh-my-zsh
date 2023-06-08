@@ -1,7 +1,8 @@
 {
     "explorer.confirmDelete": false,
-    //"editor.fontFamily": "Ubuntu Mono",
-    "editor.fontSize": 12.5,
+    "workbench.colorTheme": "GitHub Dark",
+    "editor.fontFamily": "UbuntuMono Nerd Font Mono",
+    "editor.fontSize": 13.5,
     "editor.fontLigatures": true,
     "editor.smoothScrolling": true,
     "diffEditor.codeLens": true,
@@ -9,25 +10,29 @@
     "telemetry.telemetryLevel": "off",
     "editor.bracketPairColorization.enabled": true,
     "vim.smartRelativeLine": true,
-    "terminal.integrated.fontSize": 11.5,
+    "terminal.integrated.fontSize": 13.5,
     "editor.semanticHighlighting.enabled": false,
-    "workbench.colorTheme": "Default Dark+ Experimental",
     "workbench.iconTheme": "vscode-icons",
     "workbench.fontAliasing": "auto",
-    "debug.console.fontSize": 11,
+    "debug.console.fontSize": 12,
     "explorer.confirmDragAndDrop": false,
     "vsicons.dontShowNewVersionMessage": true,
     "editor.inlineSuggest.enabled": true,
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
     "workbench.colorCustomizations": {
-        //"editorBracketHighlight.foreground1": "#f9f9fa",
-        "editorBracketHighlight.foreground2": "#f9f9fa",
-        //"editorBracketHighlight.foreground3": "#f9f9fa",
-        //"editorBracketHighlight.foreground4": "#f9f9fa",
-        "editorBracketHighlight.foreground5": "#f9f9fa",
+        "editorBracketHighlight.foreground1": "#f9f9fa",
+        "editorBracketHighlight.foreground2": "#fed141",
+        "editorBracketHighlight.foreground3": "#f9f9fa",
+        "editorBracketHighlight.foreground4": "#f9f9fa",
+        "editorBracketHighlight.foreground5": "#fed141",
         //"editorBracketHighlight.unexpectedBracket.foreground": "#fdfcfc",
+        //"editorBracketHighlight.foreground6": "#f9f9fa",
+        "editorBracketHighlight.unexpectedBracket.foreground": "#fdfcfc",
         "statusBar.background": "#2b3036",
         "statusBarItem.hoverBackground": "#266ce3",
         "statusBar.border": "#2b3036",
@@ -45,7 +50,6 @@
                     "entity.name.function.java",
                     "constant.language.json",
                     "variable",
-                    "variable.other.object.cs",
                     "punctuation.accessor.cs",
                     "source.cs",
                     "entity.name.function.cs",
@@ -53,7 +57,9 @@
                     "punctuation.parenthesis.close.cs",
                     "punctuation.parenthesis.open.cs",
                     "entity.name.variable.property.cs",
-                    "entity.name.type.class.cs"
+                    "entity.name.type.class.cs",
+                    "punctuation.definition.string.end.powershell",
+                    "punctuation.definition.string.begin.powershell",
                 ],
                 "settings": {
                     "foreground": "#fbf9f9"
@@ -61,17 +67,8 @@
             },
             {
                 "scope": [
-                    "entity.name.type.cs"
-                ],
-                "settings": {
-                    "foreground": "#266ce3",
-                    //"fontStyle": "bold"
-                }
-            },
-            {
-                "scope": [
                     "support.type.property-name",
-                    //"comment.line.double-slash.swift"
+                    "variable.other.member.powershell",
                 ],
                 "settings": {
                     "foreground": "#4EC9B0"
@@ -80,11 +77,10 @@
             {
                 "scope": [
                     "constant.numeric",
-                    "string.quoted.double.cs",
                     "support.function.builtin.shell",
                 ],
                 "settings": {
-                    "foreground": "#c0da4e",
+                    "foreground": "#feea7f",
                     //"fontStyle": "bold"
                 }
             },
@@ -94,21 +90,19 @@
                     "string.quoted.single.js",
                     "string.quoted.double.java",
                     "string.quoted.double.json",
-                    "variable.other.object.cs",
                     "string.quoted.single.python",
-                    "keyword.type.cs",
-                    "variable.other.normal.shell",
-                    "variable.other.positional.shell",
                 ],
                 "settings": {
-                    "foreground": "#266ce3",
+                    "foreground": "#598eed",
                     //"fontStyle": "bold"
                 }
             },
             {
                 "scope": [
                     "comment.line.double-slash.js",
-                    "comment.line.number-sign.python"
+                    "comment.line.number-sign.python",
+                    "comment.line.powershell",
+                    "comment.block.powershell"
                 ],
                 "settings": {
                     "foreground": "#575e69"
@@ -131,7 +125,6 @@
                     "keyword.other.using.cs",
                     "keyword.control.flow.return.cs",
                     "variable.other.readwrite.cs",
-                    "keyword.type.cs",
                     "keyword.other.base.cs",
                     "keyword.control.loop.foreach.cs",
                     "keyword.other.var.cs",
@@ -149,6 +142,11 @@
                     "keyword.operator.bitwise.cs",
                     "punctuation.definition.string.end.shell",
                     "punctuation.definition.string.begin.shell",
+                    "keyword.control.loop.while.cs",
+                    "keyword.control.try.cs",
+                    "keyword.control.flow.break.cs",
+                    "keyword.control.try.catch.cs",
+                    "keyword.control.flow.throw.cs",
                 ],
                 "settings": {
                     "foreground": "#fe7ab2"
@@ -160,7 +158,13 @@
                     "keyword.other.get.cs",
                     "keyword.other.set.cs",
                     "meta.function-call.generic.python",
-                    "log.error"
+                    "log.error",
+                    "support.function.magic.python",
+                    "entity.name.function.python",
+                    "support.function.builtin.python",
+                    "storage.type.powershell",
+                    "support.function.builtin.shell",
+                    "entity.name.variable.local.cs",
                 ],
                 "settings": {
                     "foreground": "#B392F0"
@@ -168,12 +172,18 @@
             },
             {
                 "scope": [
-                    "keyword.type.cs",
                     "entity.name.type.cs",
-                    "variable.other.object.cs"
                 ],
                 "settings": {
-                    "foreground": "#006eec"
+                    "foreground": "#dabaff"
+                }
+            },
+            {
+                "scope": [
+                    
+                ],
+                "settings": {
+                    "foreground": "#007dff"
                 }
             },
             {
@@ -187,22 +197,41 @@
             {
                 "scope": [
                     "variable.parameter.function-call.python",
-                    "variable.parameter.function.language.python"
+                    "entity.name.variable.local.cs",
+                    "entity.name.variable.field.cs",
+                    "keyword.operator.hl7",
+                    "constant.character.hl7"
                 ],
                 "settings": {
                     "foreground": "#ff6a80"
                 }
             },
             {
-                "scope": [],
+                "scope": [
+                    "entity.name.variable.local.cs",
+                    "entity.name.variable.field.cs",
+                    "variable.other.object.cs",
+                    "variable.other.readwrite.cs",
+                ],
                 "settings": {
-                    "foreground": "#83a0bf"
+                    "foreground": "#4fb0cc"
+                }
+            },
+            {
+                "scope": [
+
+                    "constant.character.escape.json",
+                ],
+                "settings": {
+                    "foreground": "#d8ba71"
                 }
             }
         ]
     },
-    "window.zoomLevel": 1,
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    }
+    "aws.telemetry": false,
+    "git.confirmSync": false,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "window.zoomLevel": 0.8,
 }
