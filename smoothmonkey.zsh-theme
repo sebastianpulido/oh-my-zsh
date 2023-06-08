@@ -10,7 +10,8 @@ typeset +H my_orange="$FG[214]"
 
 
 # primary prompt
-PS1='$FG[237]-------------------------------------------------------------------------------------------------------------%{$reset_color%}
+#PS1='$FG[237]------------------------------------------------------------------------------%{$reset_color%}
+PS1='$FG[237]%{$reset_color%}
 %{$fg_bold[green]%}┌─ %{$fg_bold[green]%}%{$fg[white]%}$fg[green][ $fg[white]%~ $fg[green]] %{$fg_bold[white]%}$(git_prompt_info)%{$fg_bold[cyan]%} 
 └──➜ %{$reset_color%}'
 
