@@ -99,7 +99,9 @@ alias vi=nvim
 alias vim=nvim
 alias ll="ls -laF"
 alias cat=bat
-#alias grep="grep --colour=auto"
  
 # Set Docker CLI tools path in your $PATH
 export PATH=$PATH:~/.docker/bin
+
+# disable vscode telemetry
+DOTNET_CLI_TELEMETRY_OPTOUT=1
