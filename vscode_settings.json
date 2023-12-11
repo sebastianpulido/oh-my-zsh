@@ -1,6 +1,6 @@
 {
     "explorer.confirmDelete": false,
-    "workbench.colorTheme": "GitHub Dark",
+    "workbench.colorTheme": "GitHub Dark Dimmed",
     "editor.fontFamily": "UbuntuMono Nerd Font Mono",
     "editor.fontSize": 13.5,
     "editor.fontLigatures": true,
@@ -14,7 +14,7 @@
     "editor.semanticHighlighting.enabled": false,
     "workbench.iconTheme": "vscode-icons",
     "workbench.fontAliasing": "auto",
-    "debug.console.fontSize": 12,
+    "debug.console.fontSize": 13.5,
     "explorer.confirmDragAndDrop": false,
     "vsicons.dontShowNewVersionMessage": true,
     "editor.inlineSuggest.enabled": true,
@@ -25,14 +25,20 @@
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "workbench.colorCustomizations": {
-        "editorBracketHighlight.foreground1": "#f9f9fa",
-        "editorBracketHighlight.foreground2": "#fed141",
-        "editorBracketHighlight.foreground3": "#f9f9fa",
-        "editorBracketHighlight.foreground4": "#f9f9fa",
-        "editorBracketHighlight.foreground5": "#fed141",
-        //"editorBracketHighlight.unexpectedBracket.foreground": "#fdfcfc",
-        //"editorBracketHighlight.foreground6": "#f9f9fa",
-        "editorBracketHighlight.unexpectedBracket.foreground": "#fdfcfc",
+        "[*Dark*]":{
+            "editorBracketHighlight.foreground1": "#f9f9fa",
+            "editorBracketHighlight.foreground2": "#fed141",
+            "editorBracketHighlight.foreground3": "#f9f9fa",
+            "editorBracketHighlight.foreground4": "#f9f9fa",
+            "editorBracketHighlight.foreground5": "#fed141",
+        },
+        "[*Light*]":{
+            "editorBracketHighlight.foreground1": "#2b3036",
+            "editorBracketHighlight.foreground2": "#4EC9B0",
+            "editorBracketHighlight.foreground3": "#2b3036",
+            "editorBracketHighlight.foreground4": "#2b3036",
+            "editorBracketHighlight.foreground5": "#4EC9B0",
+        },
         "statusBar.background": "#2b3036",
         "statusBarItem.hoverBackground": "#266ce3",
         "statusBar.border": "#2b3036",
@@ -40,7 +46,7 @@
         "activityBar.activeBorder": "#266ce3",
         "list.warningForeground": "#d77064",
         "gitDecoration.modifiedResourceForeground": "#d77064",
-        "gitDecoration.untrackedResourceForeground": "#d77064"
+        "gitDecoration.untrackedResourceForeground": "#d77064",
     },
     "workbench.editor.enablePreview": true,
     "editor.tokenColorCustomizations": {
@@ -62,7 +68,8 @@
                     "punctuation.definition.string.begin.powershell",
                 ],
                 "settings": {
-                    "foreground": "#fbf9f9"
+                    //"foreground": "#fbf9f9",
+                    "fontStyle": "bold"
                 }
             },
             {
@@ -80,8 +87,9 @@
                     "support.function.builtin.shell",
                 ],
                 "settings": {
-                    "foreground": "#feea7f",
-                    //"fontStyle": "bold"
+                    "foreground": "#ff6a80",
+                    //"foreground": "#feea7f",
+                    "fontStyle": "bold"
                 }
             },
             {
@@ -93,8 +101,8 @@
                     "string.quoted.single.python",
                 ],
                 "settings": {
-                    "foreground": "#598eed",
-                    //"fontStyle": "bold"
+                    //"foreground": "#598eed",
+                    "fontStyle": "bold"
                 }
             },
             {
@@ -233,5 +241,11 @@
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
-    "window.zoomLevel": 0.8,
+    "window.zoomLevel": 1,
+    "workbench.editorAssociations": {
+        "*.dll": "default"
+    },
+    "files.associations": {
+        "*.json": "jsonc"
+    },
 }
