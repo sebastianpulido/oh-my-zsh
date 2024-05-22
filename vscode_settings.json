@@ -1,8 +1,8 @@
 {
-    "explorer.confirmDelete": false,
-    "workbench.colorTheme": "GitHub Dark Dimmed",
+    "explorer.confirmDelete": false, 
     "editor.fontFamily": "UbuntuMono Nerd Font Mono",
-    "editor.fontSize": 13.5,
+    //"editor.fontFamily": "CodeNewRoman Nerd Font",
+    "editor.fontSize": 15,
     "editor.fontLigatures": true,
     "editor.smoothScrolling": true,
     "diffEditor.codeLens": true,
@@ -17,7 +17,15 @@
     "debug.console.fontSize": 13.5,
     "explorer.confirmDragAndDrop": false,
     "vsicons.dontShowNewVersionMessage": true,
-    "editor.inlineSuggest.enabled": true,
+    "editor.linkedEditing": true,
+    "editor.detectIndentation": true,
+    "editor.lineHeight": 0,
+    //"editor.inlineSuggest.enabled": true,
+    "workbench.sideBar.location": "left",
+    "explorer.decorations.colors": false,
+    "workbench.editor.enablePreview": true,
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "window.zoomPerWindow": true,
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
@@ -25,30 +33,62 @@
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#575F69",
+        "editor.findMatchHighlightBorder": "#575F69",
+
         "[*Dark*]":{
             "editorBracketHighlight.foreground1": "#f9f9fa",
             "editorBracketHighlight.foreground2": "#fed141",
             "editorBracketHighlight.foreground3": "#f9f9fa",
             "editorBracketHighlight.foreground4": "#f9f9fa",
             "editorBracketHighlight.foreground5": "#fed141",
+            "editorBracketHighlight.foreground6": "#f9f9fa",
+        },
+        "[*Dimmed*]":{
+            "editorBracketHighlight.foreground1": "#f9f9fa",
+            "editorBracketHighlight.foreground2": "#fed141",
+            "editorBracketHighlight.foreground3": "#f9f9fa",
+            "editorBracketHighlight.foreground4": "#f9f9fa",
+            "editorBracketHighlight.foreground5": "#fed141",
+            "editorBracketHighlight.foreground6": "#f9f9fa",
         },
         "[*Light*]":{
             "editorBracketHighlight.foreground1": "#2b3036",
-            "editorBracketHighlight.foreground2": "#4EC9B0",
+            "editorBracketHighlight.foreground2": "#4986EC",
             "editorBracketHighlight.foreground3": "#2b3036",
             "editorBracketHighlight.foreground4": "#2b3036",
-            "editorBracketHighlight.foreground5": "#4EC9B0",
+            "editorBracketHighlight.foreground5": "#4986EC",
+            "editorBracketHighlight.foreground6": "#2b3036",
         },
+
+        "focusBorder": "#2B2D2F",
         "statusBar.background": "#2b3036",
         "statusBarItem.hoverBackground": "#266ce3",
         "statusBar.border": "#2b3036",
+        //"editor.hoverHighlightBackground": "#0000ff",
+        "scrollbar.shadow": "#2b3036",
+        "scrollbarSlider.background": "#2b3036",
+        "scrollbarSlider.activeBackground": "#0000ff", 
         "tab.activeBorderTop": "#707681",
-        "activityBar.activeBorder": "#266ce3",
+        "activityBar.activeBorder": "#707681",
+        "activityBar.activeBackground": "#2b3036",
         "list.warningForeground": "#d77064",
         "gitDecoration.modifiedResourceForeground": "#d77064",
         "gitDecoration.untrackedResourceForeground": "#d77064",
+        "input.background": "#0000ff",
+        "input.foreground": "#fbf9f9",
+        //"input.placeholderForeground": "#fbf9f9",
+        "button.background": "#0000ff",
+        "button.hoverBackground" : "#4985ec",
+        "sideBar.background": "#24292F",
+        "editor.findMatchHighlightBackground": "#282D31",
+        "editor.findMatchBackground": "#282D31",
+        "editor.findMatchBorder":"#282D31", 
+        "searchEditor.findMatchBorder": "#586069",
+        "breadcrumb.background": "#202428",
+        "tab.activeForeground": "#fbf9f9",
+        "tab.activeBackground": "#202428",
     },
-    "workbench.editor.enablePreview": true,
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -68,7 +108,7 @@
                     "punctuation.definition.string.begin.powershell",
                 ],
                 "settings": {
-                    //"foreground": "#fbf9f9",
+                    "foreground": "#fbf9f9",
                     "fontStyle": "bold"
                 }
             },
@@ -110,7 +150,7 @@
                     "comment.line.double-slash.js",
                     "comment.line.number-sign.python",
                     "comment.line.powershell",
-                    "comment.block.powershell"
+                    "comment.block.powershell",
                 ],
                 "settings": {
                     "foreground": "#575e69"
@@ -119,7 +159,8 @@
             {
                 "scope": [
                     "comment.block.javadoc.java",
-                    "punctuation.definition.comment.java"
+                    "punctuation.definition.comment.java",
+                    "string.quoted.double.json.comments"
                 ],
                 "settings": {
                     "foreground": "#4985ec"
@@ -157,7 +198,7 @@
                     "keyword.control.flow.throw.cs",
                 ],
                 "settings": {
-                    "foreground": "#fe7ab2"
+                    "foreground": "#fed141"
                 }
             },
             {
@@ -173,14 +214,22 @@
                     "storage.type.powershell",
                     "support.function.builtin.shell",
                     "entity.name.variable.local.cs",
+
+                    "entity.name.type.class.python",
+                    "variable.legacy.builtin.python",
+                    "variable.parameter.attribute.powershell",
+                    "entity.name.command.shell",
                 ],
                 "settings": {
-                    "foreground": "#B392F0"
+                    //"foreground": "#B392F0"
+                    "foreground": "#007dff"
                 }
             },
             {
                 "scope": [
                     "entity.name.type.cs",
+
+
                 ],
                 "settings": {
                     "foreground": "#dabaff"
@@ -188,7 +237,7 @@
             },
             {
                 "scope": [
-                    
+                    "keyword.control.flow.python",
                 ],
                 "settings": {
                     "foreground": "#007dff"
@@ -233,19 +282,29 @@
                 "settings": {
                     "foreground": "#d8ba71"
                 }
+            },
+            {
+                "scope": [
+                    //"variable.other.readwrite.powershell",
+                    //"variable.other.normal.shell",
+
+                ],
+                "settings": {
+                    "foreground": "#000000",
+                    "fontStyle": "bold",
+                }
             }
         ]
     },
-    "aws.telemetry": false,
-    "git.confirmSync": false,
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
-    "window.zoomLevel": 1,
     "workbench.editorAssociations": {
         "*.dll": "default"
     },
     "files.associations": {
         "*.json": "jsonc"
     },
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "workbench.colorTheme": "GitHub Dark",
 }
